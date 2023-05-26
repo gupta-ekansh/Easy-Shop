@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Shop from './pages/shop/Shop';
+import Cart from './pages/cart/Cart';
+import Footer from './components/Footer';
+import { ShopContextProvider } from './context/shop-context';
+import {Toaster} from 'react-hot-toast'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toaster/>
+      <ShopContextProvider>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path = '/' element = {<Shop/>}/>
+          <Route exact path = '/cart' element = {<Cart/>}/>
+        </Routes>
+        {/* <Footer/> */}
+      </Router>
+      </ShopContextProvider>
     </div>
   );
 }

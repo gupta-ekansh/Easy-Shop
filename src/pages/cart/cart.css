@@ -1,0 +1,111 @@
+.cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cart-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartItem{
+    background-color: white;
+    box-shadow:2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    height:200px;
+    width:40%;
+    border-radius: 30px;
+    margin:10px;
+}
+.cartItem img {
+    height:150px;
+    /* background-color: red; */
+    width:150px;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+.cartItemDescription {
+    margin-left: 5%;
+    font-size: larger;
+    font-weight: 800;
+}
+.checkout{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.countHandler{
+    /* background-color: red; */
+    width:50%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.countHandler input {
+    width:10%;
+    border: none;
+    font-size: large;
+}
+.countHandler button {
+    background-color: transparent;
+    border:2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+.countHandler button:hover{
+    color:white;
+    background-color: black;
+}
+.checkout{
+    font-size: larger;
+    font-weight: 700;
+}
+.buttons {
+    /* background-color: red; */
+    width:25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons button {
+    width:50%;
+    height:50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom:10px;
+}
+.buttons button:hover{
+    background-color: black;
+    color:white;
+}
+.cart-empty{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:800px){
+    .cartItem{
+        width:80%;
+    }
+    .countHandler input{
+        width:90%;
+    }
+    .buttons {
+        width:50%;
+    }
+    .cartItem img{
+        height:100px;
+        width:inherit;
+    }
+}
