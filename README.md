@@ -1,3 +1,5 @@
+<a href = "https://vermillion-cucurucho-0e12f6.netlify.app/">Live Link of the deployed project</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
